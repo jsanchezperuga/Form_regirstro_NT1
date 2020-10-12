@@ -2,22 +2,32 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
 <html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Formulario de Registro</title>
+        <title id = "titulo">Formulario de Registro</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        
+        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
+        <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+        <h3>Formulario de Registro</h3>
+        <form action="/search/google.com" method="get">  
+            <input class = "form-field mt-10" type="text" name="nombre" id="nombreField" placeholder="Nombre y apellido"><br>
+            <input class = "form-field mt-10" type="number" name="nombre" id="nombreField" placeholder="Nro de Documento"><br>
+            <input class = "form-field mt-10" type="text" name="provincia" id="provinciaField" placeholder="Provincia"><br>
+            <input class = "form-field mt-10" type="text" name="localidad" id="localidadField" placeholder="Localidad"><br>
+            <input class = "form-field mt-10" type="email" name="email" id="emailField" placeholder="Correo Electrónico"><br>
+            <input class = "mt-10" type="checkbox" name="terms" id="termsCheck"> Acepto los términos y concidiones<br>
+
+            <input class = "mt-10 btn-primary" type="submit" value="Aceptar">
+        </form>
         
-        <script src="" async defer></script>
+        <script src="js/script.js" async defer></script>
     </body>
 </html>
