@@ -7,27 +7,65 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title id = "titulo">Formulario de Registro</title>
+        <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/styles.css">
+        <!-- aca va el link a jquery? -->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+        
     </head>
     <body>
-        <h3>Formulario de Registro</h3>
-        <form action="/search/google.com" method="get">  
-            <input class = "form-field mt-10" type="text" name="nombre" id="nombreField" placeholder="Nombre y apellido"><br>
-            <input class = "form-field mt-10" type="number" name="nombre" id="nombreField" placeholder="Nro de Documento"><br>
-            <input class = "form-field mt-10" type="text" name="provincia" id="provinciaField" placeholder="Provincia"><br>
-            <input class = "form-field mt-10" type="text" name="localidad" id="localidadField" placeholder="Localidad"><br>
-            <input class = "form-field mt-10" type="email" name="email" id="emailField" placeholder="Correo Electrónico"><br>
-            <input class = "mt-10" type="checkbox" name="terms" id="termsCheck"> Acepto los términos y concidiones<br>
 
-            <input class = "mt-10 btn-primary" type="submit" value="Aceptar">
-        </form>
-        
+        <div class="container">
+            <div class="row">
+              <div class="col-sm">
+             <br>   
+              </div>
+            </div>
+            <div class="row">
+                
+                <div class = "col-sm">
+                    <div class="container-fluid bg-info rounded" >
+                        <h1>Formulario</h1>
+                        <form action="login.html" id="elForm" novalidate>
+                          <div class="form-group">
+                            <label for="nombre">Nombre y Apellido</label>
+                            <input type="text" class="form-control form-requerido" id="nombre">
+                          </div>
+                          <div class="form-group">
+                            <label for="dni">DNI</label>
+                            <input type="number" class="form-control form-requerido" id="dni">
+                          </div>                          
+                            <div class="form-group">
+                              <label for="inputEmail">Email address</label>
+                              <input type="email" class="form-control form-requerido" id="inputEmail" aria-describedby="emailHelp">
+                              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            </div>
+                            <div class="form-group">
+                              <label for="telefono">Password</label>
+                              <input type="text" class="form-control form-requerido" id="telefono">
+                            </div>
+                            <div class="form-group form-check">
+                              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            </div>
+                            <div>
+                                <button type="submit" class="btn btn-dark" id="btnSubmit">Enviar</button>
+                            </div>
+                          </form>    
+                    </div>
+                </div>
+                <div class = "col-sm">
+                  <!-- columna vacía para empujar el form hacia la izq -->
+                </div>
+               
+              </div>
+        </div>
+               <!-- aca va el link a jquery? -->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <script src="js/script.js" async defer></script>
     </body>
 </html>
