@@ -34,27 +34,32 @@
                           <div class="form-group">
                             <label for="nombre">Nombre y Apellido</label>
                             <input type="text" class="form-control form-control-sm form-requerido" id="nombre" data-info = "Ingrese su nombre y apellido">
+                            <small id="nombreHelp" class="form-text "></small>
                           </div>
                           <div class="form-group">
                             <label for="dni">DNI</label>
-                            <input type="number" class="form-control form-control-sm form-requerido" id="dni">
+                            <input type="number" class="form-control form-control-sm form-requerido" id="dni"  data-info = "Ingrese su número de DNI">
+                            <small id="dniHelp" class="form-text "></small>
                           </div>
                           <div class="form-group">
-                            <label for="provincia">Povincia</label>
-                            <input type="text" class="form-control form-control-sm form-requerido" id="provincia">
+                            <label for="provincia">Provincia</label>
+                            <input type="text" class="form-control form-control-sm form-requerido" id="provincia"  data-info = "Seleccione su provincia">
+                            <small id="provinciaHelp" class="form-text "></small>
                           </div>
                           <div class="form-group">
-                            <label for="localidad">Povincia</label>
-                            <input type="text" class="form-control form-control-sm form-requerido" id="localidad">
+                            <label for="localidad">Localidad</label>
+                            <input type="text" class="form-control form-control-sm form-requerido" id="localidad" data-info = "Seleccione su localidad">
+                            <small id="localidadHelp" class="form-text"></small>
                           </div>    
                             <div class="form-group">
                               <label for="inputEmail">Email</label>
-                              <input type="email" class="form-control form-control-sm form-requerido" id="inputEmail" aria-describedby="emailHelp">
-                              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                              <input type="email" class="form-control form-control-sm form-requerido" id="inputEmail" data-info = "Ingrese su eMail">
+                              <small id="emailHelp" class="form-text"></small>
                             </div>
                             <div class="form-group">
                               <label for="telefono">Teléfono</label>
-                              <input type="text" class="form-control form-control-sm form-requerido" id="telefono">
+                              <input type="text" class="form-control form-control-sm form-requerido" id="telefono" data-info = "Seleccione su número de teléfono">
+                              <small id="telefonoHelp" class="form-text"></small>
                             </div>
                             <div class="form-group form-check">
                               <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -63,6 +68,7 @@
                             <div>
                                 <button type="submit" class="btn btn-dark" id="btnSubmit">Enviar</button>
                             </div>
+                            <br>
                           </form>    
                     </div>
                 </div>               
