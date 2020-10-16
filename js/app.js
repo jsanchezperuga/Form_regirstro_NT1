@@ -2,9 +2,15 @@
 $(function(){
 
     //mostrar instrucciones on blur
+
+    $(":input").on('focus',function(){
+        if($(this).data('info')){
+            ($(this).next("small").html ($(this).data('info')));
+        }
+    })
     $(":input").on('blur',function(){
         if($(this).data('info')){
-            console.log($(this).data('info'));
+            ($(this).next("small").html (""));
         }
     })
 
@@ -31,7 +37,5 @@ $(function(){
 })
 
 function campoNoVacio(obj){
-    console.log(obj,obj.value);
-    return obj.value ? true:false;
-    
+    return obj.value ? true:false;    
 }
