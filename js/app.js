@@ -1,16 +1,22 @@
 
 $(function(){
 
-    //mostrar instrucciones on blur
+    $("#elForm").on('submit',function(){
+        console.log("submit");
+        return false;
+    })
+        
+    //mostrar instrucciones onfocus
 
     $(":input").on('focus',function(){
         if($(this).data('info')){
-            ($(this).next("small").html ($(this).data('info')));
+            ($(this).next("small").html($(this).data('info')));
+            ($(this).next("small").addClass("justify-content-xl-end"));
         }
     })
     $(":input").on('blur',function(){
         if($(this).data('info')){
-            ($(this).next("small").html (""));
+            ($(this).next("small").html(""));
         }
     })
 
@@ -28,7 +34,8 @@ $(function(){
         });
     }
   //Validaciones específicas
-  //Validación de nombre
+  //Validación de nombre (no menos de 3 caracteres, no incluye números)
+
 
   //Validación de email
 
@@ -38,4 +45,8 @@ $(function(){
 
 function campoNoVacio(obj){
     return obj.value ? true:false;    
+}
+
+function validarForm(){
+    return false;
 }
